@@ -16,7 +16,7 @@ const server = https.createServer({
 
 app.use(express.json());
 app.use(cors({
-    origin: ['https://localhost'],
+    origin: ['https://theoprovost.herokuapp.com'],
     optionsSuccessStatus: 200 // for legacy brower support
 }));
 
