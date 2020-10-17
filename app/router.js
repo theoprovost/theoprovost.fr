@@ -2,6 +2,7 @@ const {Router} = require('express');
 const router = Router();
 
 const mainController = require('./controller/mainController');
+const { validateBody, validateQuery } = require('./services/validator'); // needs a schema as an argument 
 
 router.get('/', mainController.processToHomePage);
 router.get('/presentation', mainController.processToPresentationPage);
