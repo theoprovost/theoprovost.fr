@@ -1,6 +1,8 @@
 const {Router} = require('express');
 const router = Router();
 
+const mainController = require('./controller/mainController');
+
 router.get('/', (req, res) => res.json('home'));
 router.get('presentation', (req, res) => res.json('presentation'));
 router.get('/blog', (req, res) => res.json('blog'));
