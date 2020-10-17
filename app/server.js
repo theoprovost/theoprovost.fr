@@ -22,7 +22,7 @@ app.use(cors({
 
 app.use(router);
 
-app.listen(port, () => console.log(`Server is listening on https://localhost:${port}`));
+app.listen(port, () => console.log(`Server is listening on http://localhost:${port}`));
 
 // Debug H-13
 app.on('clientError', (err, socket) => {
@@ -30,4 +30,4 @@ app.on('clientError', (err, socket) => {
     socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
   });
 
-module.exports = server;
+module.exports = app;
