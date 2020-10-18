@@ -1,29 +1,32 @@
-<%- include('partials/header', {title: 'Contact', css: [`/css/index`, '/css/component', '/css/demo']}) %> 
+<%- include('partials/head', {title: 'Contact', css: '/css/index'}) %> 
 
-<div class="container">
-
-    <div class="fs-form-wrap" id="fs-form-wrap">
-        <div class="fs-title">
-            <h1>Contact</h1>
+<%- include('partials/header') %>
+<div class="form-wrapper">
+    <form action="" method="POST" class="form-example" autocomplete="on">
+        <div class="form-el">
+          <label for="first_name">Prénom</label>
+          <input type="text" name="first_name" id="first_name" required placeholder="Prénom">
         </div>
-        <form id="myform" class="fs-form fs-form-full" autocomplete="on">
-            <ol class="fs-fields">
-                <li>
-                    <label class="fs-field-label fs-anim-upper" for="q1">Quel est votre nom ?</label>
-                    <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Théo Provost" required/>
-                </li>
-                <li>
-                    <label class="fs-field-label fs-anim-upper" for="q2" data-info="We won't send you spam, we promise...">Quelle est votre adresse mail ?</label>
-                    <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="theo.provost@gmail.com" required/>
-                </li>
-                <li>
-                    <label class="fs-field-label fs-anim-upper" for="q4">Votre message</label>
-                    <textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Dites moi tout :)" required></textarea>
-                </li>
-            </ol><!-- /fs-fields -->
-            <button class="fs-submit" type="submit">Envoyer</button>
-        </form><!-- /fs-form -->
-    </div><!-- /fs-form-wrap -->
+        <div class="form-el">
+            <label for="last_name">Nom</label>
+            <input type="text" name="last_name" id="last_name" required placeholder="Nom">
+          </div>
+        <div class="form-el">
+          <label for="email">eMail</label>
+          <input type="email" name="email" id="email" required placeholder="votre.mailt@ici.com">
+        </div>
+        <div class="form-el">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="+33(0)6XXXXXXXX">
+        </div>
+        <div class="form-el">
+            <label for="content">Message</label>
+            <textarea name="content" id="content" cols="30" rows="10" required placeholder="Ecrivez ici"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Envoyer" id="btn-sub">
+        </div>
+      </form>
 </div>
 
 <%- include('partials/footer') %> 

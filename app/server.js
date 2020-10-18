@@ -4,7 +4,7 @@ const router = require('./router');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 80;
 
 app.use(express.json());
 app.use(cors({
@@ -23,7 +23,7 @@ app.use(router);
 
 app.listen(port, () => console.log(`Server is listening on http://localhost:${port}`));
 
-// Debug
+// Debug H-13
 process.on('unhandledRejection', (err) => {
     console.log('Interception d\'un rejet de promesse');
     console.error(err);

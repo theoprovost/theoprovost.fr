@@ -1,13 +1,13 @@
 {
-  "name": "theo_provost",
+  "name": "presentation-hetic-theoprovost",
   "version": "1.0.0",
-  "description": "",
+  "description": "Présentation de Théo Provost pour la Web@cadémie",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index",
     "start": "node index"
   },
-  "author": "",
+  "author": "theoprovost",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

@@ -1,15 +1,11 @@
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/reset.css">
-    <% if (locals.css.lenght > 1) { %>
-        for (const el in locals.css) {
-            <link rel="stylesheet" href="<%= locals.css[el] %>.css"> 
-        }
-    <% } %>
-    <link rel="stylesheet" href="<%= locals.css %>.css">
-    <title><%= locals.title %></title>
-</head>
-<body>
-
+<header>
+    <nav class="nav">
+        <ul class="nav-content">
+            <li class="nav-content-text"><a href="/presentation">Qui suis-je ?</a></li>
+            <li>/</li>
+            <li class="nav-content-text"><a href="/contact">Contact</a></li>
+            <li>/</li>
+            <li class="nav-content-text"><a href="/blog">Blog</a></li>
+        </ul>
+    </nav> <!-- /nav -->
+</header> <!-- /header -->
