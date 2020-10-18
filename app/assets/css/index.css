@@ -1,0 +1,81 @@
+* {
+    font-family: 'JetBrains-400';
+    letter-spacing: 1.2;
+    user-select: none;
+};
+
+.principal-wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    padding: 50px 110px;
+    width: 100%;
+    text-align: end;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header li {
+    padding: 4px 0;
+}
+
+.nav-content {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.--isopen {
+    display: flex;
+    flex-direction: column;
+}
+
+.--isclose {
+    display: none;
+}
+
+h1 {
+    font-size: 29px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 420px;
+    text-align: center; 
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+adress { 
+    height: 100%;
+    display: flex;
+}
+
+adress ul {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 110px;
+}
+
+li span {
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}

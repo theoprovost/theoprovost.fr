@@ -1,6 +1,33 @@
-<%- include('partials/header', {title: `Page d'accueil`, css: `/css/nav`}); %>
+<%- include('partials/header', {title: `Page d'accueil`, css: [`/css/index`]}); %>
 
-<div class="container h-100">
-</div>
+<div class="principal-wrapper">
+<header>
+    <nav class="nav">
+        <div class="nav-content --isopen" id="menu">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </div>
+        <ul class="nav-content --isclose" id="menu-open">
+            <li class="nav-content-text"><a href="/presentation">Qui suis-je ?</a></li>
+            <li class="nav-content-text"><a href="/contact">Contact</a></li>
+            <li class="nav-content-text"><a href="/blog">Blog</a></li>
+        </ul>
+    </nav> <!-- /nav -->
+</header> <!-- /header -->
+<main class="main-wrapper">
+    <h2>Hello</h2>
+    <h1>Moi c'est Théo 👋, <span id="parent">je conçois et développe des applications web.<span id="border"></span></span></h1>
+    <adress class="personal-infos">
+        <ul>
+            <li class="personal-infos-text">- Email<span><a href="mailto:theo.provost@gmail.com">theo.provost@gmail.com</a></span></li>
+            <li class="personal-infos-text">- Téléphone<span><a href="tel:+330673809276">+33(0)673809276</a></li>
+            <li class="personal-infos-text">- Adresse<span><a href="https://goo.gl/maps/ji8iXLUxLvnwN1Rn7" target="_blank">Lyon 6ème, France</a></li>
+        </ul>
+    </adress>
+</main> <!-- /main -->
+</div> <!-- /principal-wrapper -->
 
 <%- include('partials/footer', {script: '/js/nav'}) %> 

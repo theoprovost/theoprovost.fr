@@ -1,5 +1,29 @@
-<%- include('partials/header', {title: 'Contact'}) %> 
+<%- include('partials/header', {title: 'Contact', css: [`/css/index`, '/css/component', '/css/demo']}) %> 
 
-<h1>Page de contact</h1>
+<div class="container">
+
+    <div class="fs-form-wrap" id="fs-form-wrap">
+        <div class="fs-title">
+            <h1>Contact</h1>
+        </div>
+        <form id="myform" class="fs-form fs-form-full" autocomplete="on">
+            <ol class="fs-fields">
+                <li>
+                    <label class="fs-field-label fs-anim-upper" for="q1">Quel est votre nom ?</label>
+                    <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Théo Provost" required/>
+                </li>
+                <li>
+                    <label class="fs-field-label fs-anim-upper" for="q2" data-info="We won't send you spam, we promise...">Quelle est votre adresse mail ?</label>
+                    <input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="theo.provost@gmail.com" required/>
+                </li>
+                <li>
+                    <label class="fs-field-label fs-anim-upper" for="q4">Votre message</label>
+                    <textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Dites moi tout :)" required></textarea>
+                </li>
+            </ol><!-- /fs-fields -->
+            <button class="fs-submit" type="submit">Envoyer</button>
+        </form><!-- /fs-form -->
+    </div><!-- /fs-form-wrap -->
+</div>
 
 <%- include('partials/footer') %> 
