@@ -200,7 +200,7 @@ input:-webkit-autofill:active  {
     top: 15vh;
 }
 
-#notfound-wrapper {
+#page-wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
