@@ -1,4 +1,4 @@
-const Contact = require('../../app/models/Contact.js');
+const Contact = require('../models/contact.js');
 
 const mainController = {
     processToHomePage: (req, res) => {
