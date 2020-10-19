@@ -30,3 +30,12 @@ for (let input of inputs) {
     input.classList.add('input-error');
   });
 };
+
+// submit color indicator
+
+const btnsub = document.getElementById('btn-sub');
+btnsub.addEventListener('click', () => {
+  btnsub.style.backgroundColor = 'green';
+  btnsub.style.color = '#fff';
+  btnsub.style.borderColor = 'green';
+});

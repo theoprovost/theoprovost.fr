@@ -13,10 +13,12 @@ form.onsubmit = async function(e) {
           'Content-Type': 'application/json'
         },
         body: formDataJsonString
-      });
-
+      }).then(window.location = 'htpps://theoprovost.herokuapp.com/');
+      
     } catch (error) {
       console.error(error);
     };
-    
 };
+
+
+
