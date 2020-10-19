@@ -2,9 +2,9 @@
 
 <%- include('partials/header') %>
 <div class="form-wrapper">
-    <form action="" method="POST" class="form-example" autocomplete="on">
+    <form action="https://theoprovost.herokuapp.com/contact" method="POST" class="form-example" autocomplete="on" id="contact-form">
         <div class="form-el">
-          <label for="first_name">Prénom</label>
+          <label for="first_nme">Prénom</label>
           <input type="text" name="first_name" id="first_name" required placeholder="Prénom">
         </div>
         <div class="form-el">
@@ -28,5 +28,7 @@
         </div>
       </form>
 </div>
+
+<script src="../assets/js/contact.js"></script>
 
 <%- include('partials/footer') %> 
