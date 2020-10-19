@@ -2,8 +2,12 @@ const form = document.getElementById('contact-form');
 form.onsubmit = async function(e) {
     e.preventDefault();
     try {
-      const response = await fetch(`/contact`, {
+      const response = await fetch(`https://theoprovost.herokuapp.com/contact`, {
         method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
         body: new FormData(form)
       });
 
