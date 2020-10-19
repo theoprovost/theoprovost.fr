@@ -1,6 +1,6 @@
 const db = require('../data/database');
 
-class Contact {
+module.exports = class Contact {
     constructor(data) {
         for (const prop in data) {
             this[prop] = data[prop];
@@ -19,5 +19,3 @@ class Contact {
         };
     };
 };
-
-module.exports = Contact;
