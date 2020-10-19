@@ -14,7 +14,7 @@ const mainController = {
         res.render('blog');
     },
 
-    sendContactForm: (req, res) => {
+    sendContactForm: async (req, res) => {
         const message = new Contact(req.body);
         await message.save();
         if (message.id) {
