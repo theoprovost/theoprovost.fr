@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=theoprovost-presentation
+
+create_table 2020-10-19T00:22:00Z System Administrator <theo.provost@gmail.com> # init db
