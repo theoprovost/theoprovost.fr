@@ -1,11 +1,13 @@
 const express = require('express');
 const router = require('./router');
+const bodyParser = require("body-parser");
 
 const cors = require('cors');
 
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors({
     origin: ['https://theoprovost.herokuapp.com', 'http://localhost'],
