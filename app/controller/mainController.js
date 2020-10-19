@@ -1,4 +1,4 @@
-// TO DO : Import models
+const Contact = require('../models/Contact');
 
 const mainController = {
     processToHomePage: (req, res) => {
@@ -15,8 +15,14 @@ const mainController = {
     },
 
     sendContactForm: (req, res) => {
-        res.json('contact post is not yet functional');
-        res.redirect('404');
+        const message = new Contact(req.body);
+        await message.save();
+        if (message.id) {
+            res.redirect('/');
+        } else {
+            // temporary. TO DO : make a modal saying the message was not sent.
+            res.redirect('404');
+        }
     },
 
     get404: (req, res) => {
