@@ -23,7 +23,7 @@ app.use(router);
 
 app.listen(port, () => console.log(`Server is listening on http://localhost:${port}`));
 
-// Debug H-13
+// NB : DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process
 process.on('unhandledRejection', (err) => {
     console.log('Interception d\'un rejet de promesse');
     console.error(err);

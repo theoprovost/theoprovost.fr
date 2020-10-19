@@ -1,16 +1,16 @@
-const submitbtn = document.getElementById('btn-sub');
-submitbtn.addEventListener('submit', handleFormSubmit);
-
 const form = document.getElementById('contact-form');
-
-const handleFormSubmit = async function(e) {
+form.onsubmit = async function(e) {
     e.preventDefault();
     try {
-      const data = new FormData(form);
-      const response = await fetch(`https://theoprovost.herokuapp.com/contact`, {
+      const response = await fetch(`/contact`, {
         method: 'POST',
-        body: data,
+        body: new FormData(form)
       });
+
+      let result = await response.json();
+
+      alert(result.message);
+
     } catch (error) {
       alert('Une erreur a eu lieu lors de l\'envoi du formulaire');
       console.error(error);

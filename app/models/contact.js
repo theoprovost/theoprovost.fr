@@ -12,7 +12,13 @@ class Contact {
         INSERT INTO contact(first_name, last_name, email, telephone, content)
         VALUES($1, $2, $3, $4, $5)
         RETURNING contact.id;
-        `, [this.first_name, this.last_name, this.email, this.telephone, this.content]);
+        `, [
+            this.first_name, 
+            this.last_name, 
+            this.email, 
+            this.telephone, 
+            this.content
+        ]);
 
         if (sendContactForm.rowCount) {
             this.id = sendContactForm.rows[0].id;
