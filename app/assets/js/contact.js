@@ -14,5 +14,5 @@ const handleFormSubmit = async function(e) {
     } catch (error) {
       alert('Une erreur a eu lieu lors de l\'envoi du formulaire');
       console.error(error);
-    }
-  },
+    };
+};
