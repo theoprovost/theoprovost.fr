@@ -19,4 +19,4 @@ form.onsubmit = async function(e) {
       console.error(error);
     };
     
-}.then(widow.location = 'https://theoprovost.herokuapp.com/');
+};
