@@ -20,9 +20,8 @@ class Contact {
             this.content
         ]);
 
-        if (sendContactForm.rowCount) {
-            this.id = sendContactForm.rows[0].id;
-        };
+        this.id = sendContactForm.rows[0].id;
+        
     };
 };
 

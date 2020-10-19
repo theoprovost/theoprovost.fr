@@ -20,7 +20,6 @@ const mainController = {
         if (message.id) {
             res.redirect('/');
         } else {
-            // temporary. TO DO : make a modal saying the message was not sent.
             res.redirect('404');
         }
     },

@@ -17,7 +17,9 @@
 }
 
 header {
-    height: 80px;
+    top: 0;
+    min-height: 10vh;
+    max-height: 80px;
     padding: 50px 110px;
     width: 100%;
     text-align: end;
@@ -191,8 +193,17 @@ input:-webkit-autofill:active  {
 }
 
 
-@media screen and (max-width: 1400px) { 
-    adress ul {
-        flex-direction: column;
-    }
-  } 
+#pdf-wrapper {
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    top: 15vh;
+}
+
+#notfound-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

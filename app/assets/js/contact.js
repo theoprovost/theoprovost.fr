@@ -15,11 +15,8 @@ form.onsubmit = async function(e) {
         body: formDataJsonString
       });
 
-      let result = await response.json();
-      alert(result.message);
-
     } catch (error) {
-      alert('Une erreur a eu lieu lors de l\'envoi du formulaire');
       console.error(error);
     };
+    
 };
