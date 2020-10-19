@@ -18,8 +18,7 @@
 
 header {
     top: 0;
-    min-height: 10vh;
-    max-height: 80px;
+    min-height: 80px;
     padding: 50px 110px;
     width: 100%;
     text-align: end;
@@ -210,4 +209,38 @@ input:-webkit-autofill:active  {
 
 .submitted {
     color: green;
+}
+
+@media screen and (max-width: 1266px) {
+    h2 {
+        font-size: 250px;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    h2 {
+        font-size: 200px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    adress ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 200%;
+    }
+    #page-wrapper {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 688px) {
+    h2 {
+        font-size: 150px;
+    }
+    #btn-sub {
+        left: 300px;
+    }
+    
 }
