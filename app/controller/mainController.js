@@ -18,6 +18,7 @@ const mainController = {
         const message = new Contact(req.body);
         await message.save();
         if (message.id) {
+            res.json(message);
             res.redirect('/');
         } else {
             res.redirect('404');
