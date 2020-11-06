@@ -19,9 +19,11 @@ class Contact {
             this.telephone, 
             this.content
         ]);
-
-        this.id = sendContactForm.rows[0].id;
-        
+            if (sendContactForm.id) {
+                this.id = sendContactForm.rows[0].id
+            }
+            
+        return this;
     };
 };
 

@@ -9,10 +9,14 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(express.json());
-app.use(cors({
-    origin: ['https://theoprovost.herokuapp.com', 'http://localhost'],
-    optionsSuccessStatus: 200 // for legacy browser support
-}));
+
+// Cors policy
+app.use(cors());
+var corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200 
+ }
+app.options('*', cors(corsOptions));
 
 // Local static assets access
 app.use(express.static(__dirname + '/assets'));
