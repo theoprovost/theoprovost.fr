@@ -19,11 +19,9 @@ class Contact {
             this.telephone, 
             this.content
         ]);
-            if (sendContactForm.id) {
-                this.id = sendContactForm.rows[0].id
-            }
-            
-        return this;
+        if (sendContactForm.rowCount) {
+            this.id = sendContactForm.rows[0].id
+        };
     };
 };
 

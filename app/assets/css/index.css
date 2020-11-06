@@ -234,6 +234,20 @@ input:-webkit-autofill:active  {
     color: green;
 }
 
+.response-contact {
+    position: absolute;
+    margin: auto auto;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    transition: 1s ease-in-out;
+}
+
 @media screen and (max-width: 1266px) {
     h2 {
         font-size: 250px;

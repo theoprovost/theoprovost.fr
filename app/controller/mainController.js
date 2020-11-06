@@ -16,10 +16,10 @@ const mainController = {
 
     sendContactForm: async (req, res) => {
         const message = new Contact(req.body);
-        console.log(message);
         await message.save()
+        
         if (message.id) {
-            res.status(200).json('Message envoyé');
+            res.status(200).json('Message envoyé.');
         } else {
             res.status(500).json('Message non envoyé.')
         }

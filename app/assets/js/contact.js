@@ -6,20 +6,27 @@ form.onsubmit = async function(e) {
       const plainFormData = Object.fromEntries(formData.entries());
       const formDataJsonString = JSON.stringify(plainFormData);
 
-      const result = await fetch(`https://theoprovost.herokuapp.com/contact`, {
+      await fetch(`http://localhost:3000/contact`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*'
         },
-        mode: "cors",
         body: formDataJsonString
-      });
-      console.log(result);
 
-    } catch (error) {
-      alert.error(error);
+      }).then(res => res.json())
+        .then(res => {
+          setTimeout(() => window.location.replace("https://theoprovost.herokuapp.com/"), 8000)
+          const msg = document.createElement('div');
+          msg.className = 'response-contact';
+          msg.textContent = res;
+          document.querySelector('.form-wrapper').appendChild(msg);
+          
+        });
+
+    } catch (err) {
+      console.log(err);
     };
 };
 
