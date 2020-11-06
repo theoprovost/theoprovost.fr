@@ -6,7 +6,7 @@ form.onsubmit = async function(e) {
       const plainFormData = Object.fromEntries(formData.entries());
       const formDataJsonString = JSON.stringify(plainFormData);
 
-      await fetch(`http://localhost:3000/contact`, {
+      await fetch(`https://theoprovost.herokuapp.com/contact`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
