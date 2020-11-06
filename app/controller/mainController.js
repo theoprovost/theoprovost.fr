@@ -19,10 +19,9 @@ const mainController = {
         console.log(message);
         await message.save()
         if (message.id) {
-            res.json(message);
-            res.redirect('/');
+            res.status(200).json('Message envoyé');
         } else {
-            res.redirect('404');
+            res.status(500).json('Message non envoyé.')
         }
     },
 
