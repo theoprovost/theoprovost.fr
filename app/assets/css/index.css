@@ -48,6 +48,9 @@ h1 {
     font-size: 29px;
     text-align: center;
     letter-spacing: 3;
+}
+
+h1.main-title {
     position: absolute;
     left: 25px;
 }

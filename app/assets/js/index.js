@@ -18,7 +18,6 @@
 // }
 
 // handle form validation 
-
 const inputs = document.querySelectorAll('input, textarea')
 
 for (let input of inputs) {
@@ -32,10 +31,11 @@ for (let input of inputs) {
 };
 
 // submit color indicator
-
 const btnsub = document.getElementById('btn-sub');
-btnsub.addEventListener('click', () => {
-  btnsub.style.backgroundColor = 'green';
-  btnsub.style.color = '#fff';
-  btnsub.style.borderColor = 'green';
-});
+if (btnsub) {
+  btnsub.addEventListener('click', () => {
+    btnsub.style.backgroundColor = 'green';
+    btnsub.style.color = '#fff';
+    btnsub.style.borderColor = 'green';
+  });
+};
