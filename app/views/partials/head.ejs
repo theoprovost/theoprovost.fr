@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="<%= locals.css %>.css">
     <title><%= locals.title %></title>
+    <script>
+        const host = "www.theoprovost.fr";
+        if ((host == window.location.host) && (window.location.protocol != "https:")){
+        window.location.protocol = "https";
+        }
+    </script>
 </head>
 <body>
-
