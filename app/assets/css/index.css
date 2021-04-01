@@ -219,14 +219,25 @@ input:-webkit-autofill:active  {
 
 
 #pdf-wrapper {
-    width: 100vw;
-
     /*
+    width: 100vw;
     height: 85vh;
     position: absolute;
     top: 15vh; */
 
-    height: 100vh;
+    overflow: hidden;
+  /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+}
+
+#pdf-wrapper iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 #page-wrapper {
