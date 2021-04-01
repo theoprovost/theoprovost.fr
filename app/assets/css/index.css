@@ -61,7 +61,7 @@ h1.main-title {
     border-right: .15em solid #000; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
+    animation:
     typing 3.5s steps(90, end),
     blink-caret .90s step-end infinite;
 }
@@ -78,7 +78,7 @@ h1.main-title {
 
 h2 {
     font-size: 420px;
-    text-align: center; 
+    text-align: center;
 }
 
 .main-wrapper {
@@ -87,7 +87,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.personal-infos { 
+.personal-infos {
     height: 150px;
     width: 100%;
     display: flex;
@@ -133,7 +133,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 input::placeholder, textarea::placeholder {
@@ -202,8 +202,8 @@ input::placeholder, textarea::placeholder {
 
 /* Change the white to any color ;) */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     box-shadow: 0 0 0 30px white inset !important;
     -webkit-box-shadow: 0 0 0 30px white inset !important;
@@ -220,9 +220,13 @@ input:-webkit-autofill:active  {
 
 #pdf-wrapper {
     width: 100vw;
+
+    /*
     height: 85vh;
     position: absolute;
-    top: 15vh;
+    top: 15vh; */
+
+    height: 100vh;
 }
 
 #page-wrapper {
@@ -282,6 +286,5 @@ input:-webkit-autofill:active  {
     #btn-sub {
         left: 300px;
     }
-    
-}
 
+}
