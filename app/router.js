@@ -1,10 +1,15 @@
-const {Router} = require('express');
+const { Router } = require('express');
 const router = Router();
 
 const mainController = require('./controller/mainController');
-const { validateBody, validateQuery } = require('./services/validator'); 
+const { validateBody, validateQuery } = require('./services/validator');
 
 const messageSchema = require('./data/schemas/messageSchema');
+
+
+// Temp : to redirect to cv
+router.get('/', mainController.processToPresentationPage);
+router.get('*', mainController.get404);
 
 router.get('/', mainController.processToHomePage);
 router.get('/presentation', mainController.processToPresentationPage);
