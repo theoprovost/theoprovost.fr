@@ -59,7 +59,7 @@ This project is my professional portfolio.
 ||Bootsrap|
 ||Sass|
 
-
+This project is publish with Heroku.
 
 ## Getting Started
 ### Prerequisites
