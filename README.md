@@ -1,7 +1,7 @@
 <br>
 <p align="center">
   <a href="#">
-    <img src="ressources/logo.svg" alt="Personnal logo" width="100" height="100" style="filter: invert(54%) sepia(63%) saturate(1131%) hue-rotate(174deg) brightness(88%) contrast(87%);">
+    <img src="./app/assets/images/fav.svg" alt="Personnal logo" width="100" height="100">
   </a>
 
   <h3 align="center">Theoprovost.fr</h3>
@@ -42,25 +42,47 @@
 
 ### Abstract
 
-// TO DO
+This project is my professional portfolio.
 
 ### Notable features
 
-// TO DO
+- Completely responsive
+- Uses GitHub's API
 
 ### Built with
-// TO DO
 
-- NodeJs
-- PostgreSQL
-- GitHub's API
-- Bootsrap
+|Backend|Frontend|Data|
+|---|---|---|
+|NodeJS|JavaScript|PostgreSQL|
+|ExpressJS|EJS|GitHub API|
+||Bootsrap|
+||Sass|
+
+
 
 ## Getting Started
 ### Prerequisites
-// TO DO
+Before starting the project, make sure you have these installed :
+- Node & NPM
+- PostgreSQL
 
 ### Installation
+
+Clone the repo :
+```
+cd ./the/path/of/your/choice
+git cloclone git@github.com:theoprovost/theoprovost.fr.git
+```
+Launch the project :
+```
+cd ./repo
+node index.js
+```
+You can also use `nodemon` :
+```
+npm install
+nodemon
+```
 
 ## Contact
 > Théo Provost @theoprovost - theoprovost@epitech.eu
