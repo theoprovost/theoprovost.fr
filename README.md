@@ -46,6 +46,7 @@ This project is my professional portfolio.
 
 ### Notable features
 
+- Built from scratch (+ bootsrap)
 - Completely responsive
 - Uses GitHub's API
 
