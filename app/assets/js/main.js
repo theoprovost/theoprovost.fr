@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             perPage: 2,
                             arrows: false,
                             padding: {
-                                left: '2rem',
+                                left: '1rem',
                                 right: '2rem',
                             },
                         },
