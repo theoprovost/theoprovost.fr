@@ -101,9 +101,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         },
                         640: {
                             perPage: 2,
+                            arrows: false,
                             padding: {
-                                left: '4rem',
-                                right: '4rem',
+                                left: '2rem',
+                                right: '2rem',
                             },
                         },
                     }
