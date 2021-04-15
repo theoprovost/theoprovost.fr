@@ -85,4 +85,4 @@ nodemon index.js
 ```
 
 ## Contact
-> Théo Provost @theoprovost - theoprovost@epitech.eu
+> Théo Provost @theoprovost - theo.provost@epitech.eu
