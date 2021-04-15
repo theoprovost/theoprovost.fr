@@ -5,3 +5,4 @@ npm-debug.log
 sqitch.conf
 .pgpass
 test.http
+/ressources/

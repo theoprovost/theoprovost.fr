@@ -13,10 +13,10 @@ class Contact {
         VALUES($1, $2, $3, $4, $5)
         RETURNING contact.id;
         `, [
-            this.first_name, 
-            this.last_name, 
-            this.email, 
-            this.telephone, 
+            this.first_name,
+            this.last_name,
+            this.email,
+            this.telephone,
             this.content
         ]);
         if (sendContactForm.rowCount) {

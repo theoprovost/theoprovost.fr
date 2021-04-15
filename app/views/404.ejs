@@ -1,11 +1,13 @@
-<%- include('partials/head', {title: '404', css:'/css/index'}) %>
+<%- include('partials/head', {title: `Théo Provost - 404`}); %>
 
-<!-- !temp : include header -->
-<!-- effet de bord iframe : rajouter une boucle ejs pour ne pas display deux fois le menu -->
-<div id="page-wrapper">
-    <div>
-        <h2>404</h2>
-        <a href="/">Return to resume.</a>
+    <%- include('partials/header') %>
+
+<div class="container hero mb-5">
+    <div class="d-flex flex-column w-100 mt-5 mb-5 justify-content-center align-items-center">
+        <h1 class="mt-5">Ooops, 404!</h1>
+        <a href="/" class="mb-5 mt-1">Return home here</a>
+        <p class="mb-1">You think this is an error ? Contact me :</p>
+        <p class="mb-2"><a href="mailto:theo.provost@epitech.eu">theo.provost@epitech.eu</a></p>
     </div>
 </div>
 

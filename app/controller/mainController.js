@@ -1,15 +1,28 @@
-const Contact = require('../models/contact.js');
+const Info = require('../models/Info');
+const Repo = require('../models/Repo');
 
 const mainController = {
-    processToHomePage: (_, res) => {
-        res.render('index');
+    index: async (_, res) => {
+        const info = new Info();
+        const repo = new Repo();
+        const number_repos = await info.fetchGitHubAPI() || 7;
+        const time_programming = info.getHours();
+        const repos = await repo.fetchLastRepos();
+        res.render('index', { number_repos, time_programming });
     },
-    processToPresentationPage: (_, res) => {
-        res.render('presentation')
+
+    hello: (_, res) => {
+        res.render('choice');
     },
-    processToContactPage: (_, res) => {
-        res.render('contact');
+
+    myStack: (_, res) => {
+        res.render('mystack');
     },
+
+    curriculumVitae: (_, res) => {
+        res.render('cv');
+    },
+
     processToBlogPage: (_, res) => {
         res.render('blog');
     },
@@ -17,7 +30,7 @@ const mainController = {
     sendContactForm: async (req, res) => {
         const message = new Contact(req.body);
         await message.save()
-        
+
         if (message.id) {
             res.status(200).json('Message envoyé.');
         } else {
@@ -31,4 +44,3 @@ const mainController = {
 };
 
 module.exports = mainController;
-

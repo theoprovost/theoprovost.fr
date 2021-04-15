@@ -1,7 +1,7 @@
 {
-  "name": "presentation-hetic-theoprovost",
+  "name": "theoprovost.fr",
   "version": "1.0.0",
-  "description": "Présentation de Théo Provost pour la Web@cadémie",
+  "description": "Théo Provost portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index",
@@ -10,11 +10,14 @@
   "author": "theoprovost",
   "license": "ISC",
   "dependencies": {
+    "@octokit/core": "^3.4.0",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "joi": "^17.2.1",
+    "nodemon": "^2.0.7",
     "pg": "^8.4.1"
   },
   "engines": {

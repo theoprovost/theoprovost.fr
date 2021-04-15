@@ -1,13 +1,83 @@
-<header>
-    <nav class="nav">
-        <ul class="nav-content">
-            <li class="nav-content-text"><a href="/presentation">Qui suis-je ?</a></li>
-            <li>/</li>
-            <li class="nav-content-text"><a href="/contact">Contact</a></li>
-            <li>/</li>
-            <li class="nav-content-text"><a href="/blog">Blog</a></li>
-            <li>/</li>
-            <li class="nav-content-text"><a href="/">🏠</a></li>
-        </ul>
-    </nav> <!-- /nav -->
-</header> <!-- /header -->
+<!-- NavBar start -->
+      <nav id="primary-navbar" class="primary-nav navbar navbar-expand-lg navbar-light bg-white fixed-top font-nunito">
+         <div class="container px-4 px-sm-0">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="/" data-pathname='/'>Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/#_about" >About me</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/#_stack" data-pathname="/mystack/">My stack</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/#_projects" data-pathname="/portfolio/">Projects</a>
+                  </li>
+
+                  <!-- <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="/work" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Projects
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Code</a></li>
+                        <li><a class="dropdown-item" href="#">UI/UX</a></li>
+                         <li><a class="dropdown-item" href="#">See all</a></li>
+                     </ul>
+                  </li> -->
+                  <div class="nav-item d-flex h-full px-2 align-items-center pt-1">
+                     <li class="nav-item">
+                        <a href="https://github.com/theoprovost" target="_blank"><img src="/images/github.svg" class="h-full"></a>
+                     </li>
+                     <li class="nav-item px-2">
+                        <a href="https://www.linkedin.com/in/theoprovost/" target="_blank"><img src="/images/linkedin.svg" class="dark_icon"></a>
+                     </li>
+                     <!-- <li class="nav-item px-2">
+                        <a href="#"><img src="/images/globe.svg" class="dark_icon"></a>
+                     </li> -->
+                  </div>
+               </ul>
+            </div>
+
+            <button id="open-sidenav" class="open-sidenav bg-transparent border-0 ms-2 no-show-lg">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2c333a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+               </svg>
+            </button>
+         </div>
+      </nav>
+      <!-- NavBar end -->
+
+      <!-- Off Canvas Menu Start-->
+      <div id="sidenav-wrap">
+         <span class="sidenav-backdrop"></span>
+         <div id="sidenav" class="sidenav font-nunito bg-dark px-4">
+            <a href="#" id="close-sidenav" class="close-sidenav text-decoration-none text-white mb-2">&times;</a>
+            <div class="sidenav-menu mt-5">
+               <ul class="nav flex-column mt-5">
+                  <li class="nav-item">
+                     <a class="nav-link px-0" href="/">Home</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                     <a class="nav-link px-0" href="#_about">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link px-0" href="/portfolio/">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link px-0" href="#_contact">Contact</a>
+                  </li> -->
+               </ul>
+            </div>
+            <!-- <div class="sidenav-social mt-5">
+               <ul class="list-unstyled">
+                  <li class="inline-block me-2"><a href="https://www.linkedin.com/in/theoprovost/" class="text-white"><img src="/images/linkedin.svg"></a></li>
+                  <li class="inline-block"><a href="https://github.com/theoprovost" class="-white"><img src="/images/github.svg"></a></li>
+               </ul>
+            </div> -->
+         </div>
+      </div>
+      <!-- Off Canvas Menu End-->
