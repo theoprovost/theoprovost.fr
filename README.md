@@ -76,12 +76,12 @@ git cloclone git@github.com:theoprovost/theoprovost.fr.git
 Launch the project :
 ```
 cd ./repo
+npm install
 node index.js
 ```
 You can also use `nodemon` :
 ```
-npm install
-nodemon
+nodemon index.js
 ```
 
 ## Contact
