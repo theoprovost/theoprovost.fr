@@ -709,4 +709,8 @@ details[open] summary ~ * {
     margin-left: 0px;
   }
 }
+
+#stack_link:hover {
+  color: #fff !important;
+}
 /*# sourceMappingURL=style.css.map */

@@ -588,3 +588,7 @@ details[open] summary ~ * {
   0%    {opacity: 0; margin-left: -10px}
   100%  {opacity: 1; margin-left: 0px}
 }
+
+#stack_link:hover {
+	color: #fff !important;
+}
