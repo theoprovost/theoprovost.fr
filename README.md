@@ -1,6 +1,6 @@
 <br>
 <p align="center">
-  <a href="#">
+  <a href="https://theoprovost.fr">
     <img src="./app/assets/images/fav.svg" alt="Personnal logo" width="100" height="100">
   </a>
 
