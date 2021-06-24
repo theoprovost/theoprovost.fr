@@ -5,7 +5,7 @@ const mainController = {
     index: async (_, res) => {
         const info = new Info();
         const repo = new Repo();
-        const number_repos = await info.fetchGitHubAPI() || 7;
+        const number_repos = await info.fetchGitHubAPI() || 8;
         const time_programming = info.getHours();
         const repos = await repo.fetchLastRepos();
         res.render('index', { number_repos, time_programming });
